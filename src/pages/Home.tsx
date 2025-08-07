@@ -1,3 +1,4 @@
+import AboutMe from "../components/AboutMe";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import StarBackground from "../components/StarBackground";
@@ -19,6 +20,7 @@ function Home() {
             <main>
                 {/* Hero section */}
                 <HeroSection />
+                <AboutMe />
             </main>
 
             {/* Footer */}
