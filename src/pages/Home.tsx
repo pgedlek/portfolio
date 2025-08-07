@@ -1,4 +1,5 @@
 import AboutMe from "../components/AboutMe";
+import ContactSection from "../components/ContactSection";
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
@@ -31,6 +32,9 @@ function Home() {
 
                 {/* Projects section*/}
                 <ProjectsSection />
+
+                {/* Contact Section*/}
+                <ContactSection />
             </main>
 
             {/* Footer */}
