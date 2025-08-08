@@ -1,14 +1,5 @@
 {
   "files": [],
-  "compilerOptions": {
-    /* Path Aliases */
-    "baseUrl": ".", // This is important for the paths to work correctly
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ] // This maps "@" to the "src" directory
-    }
-  },
   "references": [
     {
       "path": "./tsconfig.app.json"

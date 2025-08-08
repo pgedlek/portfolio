@@ -7,7 +7,7 @@ function ContactSection() {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleSubmit = (e: FormEventHandler<HTMLFormElement>) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
         setIsSubmitting(true);
