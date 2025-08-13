@@ -2,6 +2,7 @@ import AboutMe from "../components/AboutMe";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
 import SkillsSection from "../components/SkillsSection";
@@ -11,6 +12,9 @@ import ThemeToggle from "../components/ThemeToggle";
 function Home() {
     return (
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+
             {/* Theme Toggle */}
             <ThemeToggle />
 
