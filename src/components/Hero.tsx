@@ -1,7 +1,7 @@
 import { ArrowDown } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-function HeroSection() {
+function Hero() {
     const { t } = useTranslation();
 
     return (
@@ -36,4 +36,4 @@ function HeroSection() {
     );
 }
 
-export default HeroSection;
+export default Hero;

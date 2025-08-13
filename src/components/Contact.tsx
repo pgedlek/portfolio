@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 
-function ContactSection() {
+function Contact() {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -143,4 +143,4 @@ function ContactSection() {
     );
 }
 
-export default ContactSection;
+export default Contact;
