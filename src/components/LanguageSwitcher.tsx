@@ -32,47 +32,55 @@ function LanguageSwitcher() {
     }, [isDropdownOpen]);
 
     return (
-        <div ref={dropdownRef}>
-            {/* Globe Button */}
-            <button onClick={() => setIsDropdownOpen(true)}
+        <>
+            {/* Desktop version */}
+            <div ref={dropdownRef} className="max-sm:hidden relative inline-block">
+                {/* Globe Button */}
+                <button onClick={() => setIsDropdownOpen(true)}
 
-                className={cn(
-                    "fixed max-sm:hidden top-5 right-15 z-50 p-1 rounded-full transition-colors duration-300",
-                    "focus:outline-hidden cursor-pointer"
-                )}
-            >
-                <Globe className="h-6 w-6 text-primary" />
-            </button>
-
-            {/* Dropdown Menu */}
-            {isDropdownOpen && (
-                <div
                     className={cn(
-                        "fixed top-15 right-2 bg-white dark:bg-gray-800 shadow-lg rounded-md",
-                        "py-2 w-32 z-50 border border-gray-200 dark:border-gray-700"
+                        "rounded-full transition-colors duration-300",
+                        "focus:outline-hidden cursor-pointer"
                     )}
                 >
-                    <button
-                        onClick={() => changeLanguage("en")}
+                    <Globe className="h-6 w-6 text-primary" />
+                </button>
+
+                {/* Dropdown Menu */}
+                {isDropdownOpen && (
+                    <div
                         className={cn(
-                            "block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700",
-                            "focus:outline-none"
+                            "absolute right-0 bg-white dark:bg-gray-800 shadow-lg rounded-md",
+                            "py-2 w-32 z-50 border border-gray-200 dark:border-gray-700"
                         )}
                     >
-                        English
-                    </button>
-                    <button
-                        onClick={() => changeLanguage("pl")}
-                        className={cn(
-                            "block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700",
-                            "focus:outline-none"
-                        )}
-                    >
-                        Polski
-                    </button>
-                </div>
-            )}
-        </div>
+                        <button
+                            onClick={() => changeLanguage("en")}
+                            className={cn(
+                                "block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700",
+                                "focus:outline-none"
+                            )}
+                        >
+                            English
+                        </button>
+                        <button
+                            onClick={() => changeLanguage("pl")}
+                            className={cn(
+                                "block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700",
+                                "focus:outline-none"
+                            )}
+                        >
+                            Polski
+                        </button>
+                    </div>
+                )}
+            </div>
+            {/* Mobile version */}
+            <>
+
+            </>
+        </>
+
     );
 }
 

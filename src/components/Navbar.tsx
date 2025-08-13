@@ -2,6 +2,8 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const navItems = [
     { name: "Home", href: "#hero" },
@@ -29,7 +31,7 @@ function Navbar() {
 
     return (
         <nav className={cn("fixed w-full z-40 transition-all duration-300",
-            isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5")}>
+            isScrolled ? "py-3 bg-background/80 shadow-xs" : "py-5")}>
             <div className="container flex items-center justify-between">
                 <a className="text-xl font-bold text-primary flex items-center" href="#hero">
                     <span className="relative z-10">
@@ -54,6 +56,12 @@ function Navbar() {
                     <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#contact">
                         {t("navbar.contact")}
                     </a>
+                    <a>
+                        <ThemeToggle />
+                    </a>
+                    <a>
+                        <LanguageSwitcher />
+                    </a>
                 </div>
 
                 {/* Mobile */}
@@ -70,14 +78,40 @@ function Navbar() {
                     isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                 )}>
                     <div className="flex flex-col space-y-8 text-xl">
-                        {navItems.map((item, key) => (
-                            <a key={key} href={item.href}
-                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                                onClick={() => setisMenuOpen(false)}
-                            >
-                                {item.name}
-                            </a>
-                        ))}
+                        <a href="#hero"
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            onClick={() => setisMenuOpen(false)}
+                        >
+                            {t("navbar.home")}
+                        </a>
+                        <a href="#about"
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            onClick={() => setisMenuOpen(false)}
+                        >
+                            {t("navbar.about")}
+                        </a>
+                        <a href="#skills"
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            onClick={() => setisMenuOpen(false)}
+                        >
+                            {t("navbar.skills")}
+                        </a>
+                        <a href="#projects"
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            onClick={() => setisMenuOpen(false)}
+                        >
+                            {t("navbar.projects")}
+                        </a>
+                        <a href="#contact"
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            onClick={() => setisMenuOpen(false)}
+                        >
+                            {t("navbar.contact")}
+                        </a>
+                        <hr />
+                        <a>
+                            <ThemeToggle />
+                        </a>
                     </div>
                 </div>
             </div>
