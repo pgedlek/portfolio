@@ -1,7 +1,57 @@
 {
-    "welcome": "Cześć jestem ",
-    "aboutMe": "O mnie",
-    "contact": "Kontakt",
-    "skills": "Umiejętności",
-    "projects": "Projekty"
+    "navbar": {
+        "home": "Home",
+        "about": "O mnie",
+        "skills": "Umiejętności",
+        "projects": "Projekty",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "welcome": "Cześć, jestem ",
+        "firstName": "Paweł",
+        "lastName": "Gędłek",
+        "heroDescription": "Tworzę wyjątkowe doświadczenia w sieci, wykorzystując nowoczesne technologie. Specjalizuję się w tworzeniu interfejsów front‑end, które są zarówno estetyczne, jak i funkcjonalne.",
+        "myWorkButton": "Zobacz moje projekty",
+        "scroll": "Przewiń w dół"
+    },
+    "aboutMe": {
+        "about": "O",
+        "me": "Mnie",
+        "title": "Web Developer z pasją i twórca technologicznych rozwiązań",
+        "firstParagpraph": "Z ponad 5‑letnim doświadczeniem w tworzeniu stron internetowych specjalizuję się w budowaniu responsywnych, dostępnych i wydajnych aplikacji webowych z wykorzystaniem nowoczesnych technologii.",
+        "secondParagraph": "Z pasją tworzę eleganckie rozwiązania złożonych problemów i nieustannie uczę się nowych technologii oraz technik, aby pozostawać na czele stale zmieniającego się świata webu..",
+        "firstCardTitle": "Web Development",
+        "firstCard": "Tworzenie responsywnych stron i aplikacji internetowych z wykorzystaniem nowoczesnych frameworków.",
+        "secondCardTitle": "UI/UX Design",
+        "secondCard": "Projektowanie intuicyjnych interfejsów użytkownika i płynnych doświadczeń użytkownika.",
+        "thirdCardTitle": "Project Management",
+        "thirdCard": "Prowadzenie projektów od koncepcji po realizację z wykorzystaniem metodyk zwinnych.",
+        "getInTouchButton": "Skontaktuj się ze mną",
+        "downloadResumeButton": "Pobierz moje CV"
+    },
+    "mySkills": {
+        "my": "Moje",
+        "skills": "Umiejętności"
+    },
+    "projects": {
+        "featured": "Wyróżnione",
+        "projects": "Projekty",
+        "description": "Przedstawiam wybrane ostatnie projekty, które tworzyłem z najwyższą dbałością o szczegóły, wydajność i komfort użytkownika.",
+        "githubButton": "Sprawdź mojego GitHuba"
+    },
+    "contact": {
+        "getIn": "Napisz do",
+        "touch": "Mnie",
+        "description": "Masz pomysł na projekt lub chcesz nawiązać współpracę? Skontaktuj się ze mną — zawsze jestem otwarty na rozmowę o nowych możliwościach.",
+        "contactInformation": "Informacje kontaktowe",
+        "email": "Email",
+        "phone": "Telefon",
+        "location": "Lokalizacja",
+        "socialMedia": "Nawiąż kontakt",
+        "formTitle": "Wyślij mi wiadomość",
+        "formName": "Twoje Imię i Nazwisko",
+        "formEmail": "Twój email",
+        "formMessage": "Twoja Wiadomość",
+        "sendMessageButton": "Wyślij"
+    }
 }

@@ -1,7 +1,57 @@
 {
-    "welcome": "Hi I'm ",
-    "aboutMe": "About Me",
-    "contact": "Contact",
-    "skills": "Skills",
-    "projects": "Projects"
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "welcome": "Hi, I'm ",
+        "firstName": "Pawel",
+        "lastName": "Gedlek",
+        "heroDescription": "I create stellar web experience with modern technologies. Specializing in front-end development, I build interfaces that are both beautiful and functional.",
+        "myWorkButton": "View my work",
+        "scroll": "Scroll down"
+    },
+    "aboutMe": {
+        "about": "About",
+        "me": "Me",
+        "title": "Passionate Web Developer & Tech Creator",
+        "firstParagpraph": "With over 5 years of experience in web development, I specialize in creating responsive, accessible, and performant web applications using modern technologies.",
+        "secondParagraph": "I'm passionate about creating elegant solutions to complex problems, and I'm constantly learning new technologies and techniques to stay at the forefront of the ever-evolving web landscape.",
+        "firstCardTitle": "Web Development",
+        "firstCard": "Creating responsive websites and web applications with modern frameworks.",
+        "secondCardTitle": "UI/UX Design",
+        "secondCard": "Designing intuitive usser interfaces and seamless user experiences.",
+        "thirdCardTitle": "Project Management",
+        "thirdCard": "Leading projects from conception to completion with agile methodologies.",
+        "getInTouchButton": "Get in touch",
+        "downloadResumeButton": "Download Resume"
+    },
+    "mySkills": {
+        "my": "My",
+        "skills": "Skills"
+    },
+    "projects": {
+        "featured": "Featured",
+        "projects": "Projects",
+        "description": "Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.",
+        "githubButton": "Check my GitHub"
+    },
+    "contact": {
+        "getIn": "Get in",
+        "touch": "Touch",
+        "description": "Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opporuinities.",
+        "contactInformation": "Contact Information",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "socialMedia": "Connect with me",
+        "formTitle": "Send me a message",
+        "formName": "Your Name",
+        "formEmail": "Your Email",
+        "formMessage": "Your Message",
+        "sendMessageButton": "Send Message"
+    }
 }

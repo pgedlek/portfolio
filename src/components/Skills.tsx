@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { cn } from '@/lib/utils';
+import { useTranslation } from "react-i18next";
 
 const skills = [
     { name: "HTML/CSS", level: 95, category: "frontend" },
@@ -26,6 +27,8 @@ const categories = ["all", "frontend", "backend", "tools"];
 function Skills() {
     const [activeCategory, setActiveCategory] = useState("all");
 
+    const { t } = useTranslation();
+
     const filteredSkills = skills.filter(
         (skill) => activeCategory === "all" || skill.category === activeCategory
     );
@@ -36,7 +39,7 @@ function Skills() {
         >
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                    My <span className="text-primary"> Skills</span>
+                    {t("mySkills.my")} <span className="text-primary"> {t("mySkills.skills")}</span>
                 </h2>
 
                 <div className="flex flex-wrap justify-center gap-4 mb-12">

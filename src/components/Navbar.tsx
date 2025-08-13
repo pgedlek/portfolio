@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const navItems = [
     { name: "Home", href: "#hero" },
@@ -13,6 +14,8 @@ const navItems = [
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setisMenuOpen] = useState(false);
+
+    const { t } = useTranslation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,19 +33,27 @@ function Navbar() {
             <div className="container flex items-center justify-between">
                 <a className="text-xl font-bold text-primary flex items-center" href="#hero">
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground">Pawel Gedlek </span> Portfolio
+                        <span className="text-glow text-foreground"></span>Portfolio
                     </span>
                 </a>
 
                 {/* Desktop */}
                 <div className="hidden md:flex space-x-8">
-                    {navItems.map((item, key) => (
-                        <a key={key} href={item.href}
-                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                        >
-                            {item.name}
-                        </a>
-                    ))}
+                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#hero">
+                        {t("navbar.home")}
+                    </a>
+                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#about">
+                        {t("navbar.about")}
+                    </a>
+                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#skills">
+                        {t("navbar.skills")}
+                    </a>
+                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#projects">
+                        {t("navbar.projects")}
+                    </a>
+                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#contact">
+                        {t("navbar.contact")}
+                    </a>
                 </div>
 
                 {/* Mobile */}
