@@ -76,9 +76,21 @@ function LanguageSwitcher() {
                 )}
             </div>
             {/* Mobile version */}
-            <>
+            <div className="min-md:hidden flex flex-col">
+                <button
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300 py-4"
+                    onClick={() => changeLanguage("en")}
+                >
+                    English
+                </button>
+                <button
 
-            </>
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    onClick={() => changeLanguage("pl")}
+                >
+                    Polski
+                </button>
+            </div>
         </>
 
     );

@@ -6,11 +6,11 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 const navItems = [
-    { name: "Home", href: "#hero" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: "home", href: "#hero" },
+    { name: "about", href: "#about" },
+    { name: "skills", href: "#skills" },
+    { name: "projects", href: "#projects" },
+    { name: "contact", href: "#contact" },
 ];
 
 function Navbar() {
@@ -41,21 +41,15 @@ function Navbar() {
 
                 {/* Desktop */}
                 <div className="hidden md:flex space-x-8">
-                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#hero">
-                        {t("navbar.home")}
-                    </a>
-                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#about">
-                        {t("navbar.about")}
-                    </a>
-                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#skills">
-                        {t("navbar.skills")}
-                    </a>
-                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#projects">
-                        {t("navbar.projects")}
-                    </a>
-                    <a className="text-foreground/80 hover:text-primary transition-colors duration-300" href="#contact">
-                        {t("navbar.contact")}
-                    </a>
+                    {navItems.map((item) => (
+                        <a
+                            key={item.name}
+                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                            href={item.href}
+                        >
+                            {t(`navbar.${item.name}`)}
+                        </a>
+                    ))}
                     <a>
                         <ThemeToggle />
                     </a>
@@ -78,39 +72,22 @@ function Navbar() {
                     isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
                 )}>
                     <div className="flex flex-col space-y-8 text-xl">
-                        <a href="#hero"
-                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                            onClick={() => setisMenuOpen(false)}
-                        >
-                            {t("navbar.home")}
-                        </a>
-                        <a href="#about"
-                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                            onClick={() => setisMenuOpen(false)}
-                        >
-                            {t("navbar.about")}
-                        </a>
-                        <a href="#skills"
-                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                            onClick={() => setisMenuOpen(false)}
-                        >
-                            {t("navbar.skills")}
-                        </a>
-                        <a href="#projects"
-                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                            onClick={() => setisMenuOpen(false)}
-                        >
-                            {t("navbar.projects")}
-                        </a>
-                        <a href="#contact"
-                            className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                            onClick={() => setisMenuOpen(false)}
-                        >
-                            {t("navbar.contact")}
-                        </a>
+                        {navItems.map((item) => (
+                            <a
+                                key={item.name}
+                                href={item.href}
+                                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                                onClick={() => setisMenuOpen(false)}
+                            >
+                                {t(`navbar.${item.name}`)}
+                            </a>
+                        ))}
                         <hr />
                         <a>
                             <ThemeToggle />
+                        </a>
+                        <a>
+                            <LanguageSwitcher />
                         </a>
                     </div>
                 </div>
