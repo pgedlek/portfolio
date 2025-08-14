@@ -50,8 +50,11 @@
         "socialMedia": "Nawiąż kontakt",
         "formTitle": "Wyślij mi wiadomość",
         "formName": "Twoje Imię i Nazwisko",
+        "formNamePlaceholder": "Jan Nowak",
         "formEmail": "Twój email",
+        "formEmailPlaceholder": "jan.nowak@gmail.com",
         "formMessage": "Twoja Wiadomość",
+        "formMessagePlaceholder": "Wpisz swoją wiadomość",
         "sendMessageButton": "Wyślij"
     }
 }

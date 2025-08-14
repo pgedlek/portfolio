@@ -108,7 +108,7 @@ function Contact() {
                                     className="block text-sm font-medium mb-2">
                                     {t("contact.formName")}
                                 </label>
-                                <input type="text" id="name" name="name" required placeholder="John Doe"
+                                <input type="text" id="name" name="name" required placeholder={t("contact.formNamePlaceholder")}
                                     className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
                             </div>
                             <div>
@@ -116,7 +116,7 @@ function Contact() {
                                     className="block text-sm font-medium mb-2">
                                     {t("contact.formEmail")}
                                 </label>
-                                <input type="email" id="email" name="email" required placeholder="john@gmail.com"
+                                <input type="email" id="email" name="email" required placeholder={t("contact.formEmailPlaceholder")}
                                     className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
                             </div>
                             <div>
@@ -124,7 +124,7 @@ function Contact() {
                                     className="block text-sm font-medium mb-2">
                                     {t("contact.formMessage")}
                                 </label>
-                                <textarea id="message" name="message" required placeholder="Your message here"
+                                <textarea id="message" name="message" required placeholder={t("contact.formMessagePlaceholder")}
                                     className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
                             </div>
 

@@ -50,8 +50,11 @@
         "socialMedia": "Connect with me",
         "formTitle": "Send me a message",
         "formName": "Your Name",
+        "formNamePlaceholder": "John Doe",
         "formEmail": "Your Email",
+        "formEmailPlaceholder": "john.doe@gmail.com",
         "formMessage": "Your Message",
+        "formMessagePlaceholder": "Type your message here",
         "sendMessageButton": "Send Message"
     }
 }
