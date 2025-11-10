@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
+import { Facebook, Github, Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -9,18 +9,46 @@ function Contact() {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const { t } = useTranslation();
 
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
         setIsSubmitting(true);
 
-        setTimeout(() => {
+        fetch("https://formspree.io/f/xqawkzdo", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                name: (e.target as any).name.value,
+                email: (e.target as any).email.value,
+                message: (e.target as any).message.value,
+            }),
+        }).then((res) => {
+            console.log(res);
             toast({
                 title: "Message sent!",
                 description: "Thank you for your message. I'll back to you soon."
             })
+        }).catch((err) => {
+            console.error(err);
+            toast({
+                title: "Error",
+                description: "Something went wrong. Please try again later.",
+                variant: "destructive",
+            });
+        }).finally(() => {
             setIsSubmitting(false);
-        }, 1500);
+            setTimeout(() => {
+                setName("");
+                setEmail("");
+                setMessage("");
+            }, 3000);
+        });
     }
 
     return (
@@ -46,10 +74,10 @@ function Contact() {
                                     <Mail className="h-6 w-6 text-primary" />{" "}
                                 </div>
                                 <div>
-                                    <h4> {t("contact.email")}</h4>
-                                    <a href="mailto:hello@gmail.com"
+                                    <h4 className="text-left">{t("contact.email")}:</h4>
+                                    <a href="mailto:pawgedlek@gmail.com"
                                         className="text-muted-foreground hover:text-primary transition-colors">
-                                        hello@gmail.com
+                                        pawgedlek@gmail.com
                                     </a>
                                 </div>
                             </div>
@@ -58,10 +86,10 @@ function Contact() {
                                     <Phone className="h-6 w-6 text-primary" />{" "}
                                 </div>
                                 <div>
-                                    <h4> {t("contact.phone")}</h4>
-                                    <a href="tel:+48123456789"
+                                    <h4 className="text-left">{t("contact.phone")}:</h4>
+                                    <a href="tel:+48578555475"
                                         className="text-muted-foreground hover:text-primary transition-colors">
-                                        +48 123 456 789
+                                        +48 578 555 475
                                     </a>
                                 </div>
                             </div>
@@ -70,7 +98,7 @@ function Contact() {
                                     <MapPin className="h-6 w-6 text-primary" />{" "}
                                 </div>
                                 <div>
-                                    <h4> {t("contact.location")}</h4>
+                                    <h4 className="text-left">{t("contact.location")}:</h4>
                                     <a className="text-muted-foreground hover:text-primary transition-colors">
                                         Krakow, Poland
                                     </a>
@@ -85,13 +113,10 @@ function Contact() {
                                     <Linkedin />
                                 </a>
                                 <a href="#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
-                                    <Twitter />
+                                    <Github />
                                 </a>
                                 <a href="#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
                                     <Instagram />
-                                </a>
-                                <a href="#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
-                                    <Facebook />
                                 </a>
                             </div>
                         </div>
@@ -109,6 +134,7 @@ function Contact() {
                                     {t("contact.formName")}
                                 </label>
                                 <input type="text" id="name" name="name" required placeholder={t("contact.formNamePlaceholder")}
+                                    value={name} onChange={(e) => setName(e.target.value)}
                                     className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
                             </div>
                             <div>
@@ -117,6 +143,7 @@ function Contact() {
                                     {t("contact.formEmail")}
                                 </label>
                                 <input type="email" id="email" name="email" required placeholder={t("contact.formEmailPlaceholder")}
+                                    value={email} onChange={(e) => setEmail(e.target.value)}
                                     className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
                             </div>
                             <div>
@@ -125,6 +152,7 @@ function Contact() {
                                     {t("contact.formMessage")}
                                 </label>
                                 <textarea id="message" name="message" required placeholder={t("contact.formMessagePlaceholder")}
+                                    value={message} onChange={(e) => setMessage(e.target.value)}
                                     className="w-full px-4 py-3 rounded-md border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary" />
                             </div>
 

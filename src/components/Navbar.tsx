@@ -5,15 +5,15 @@ import { useTranslation } from "react-i18next";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
 
-const navItems = [
-    { name: "home", href: "#hero" },
-    { name: "about", href: "#about" },
-    { name: "skills", href: "#skills" },
-    { name: "projects", href: "#projects" },
-    { name: "contact", href: "#contact" },
-];
-
 function Navbar() {
+    const navItems = [
+        { name: "home", href: "#hero" },
+        { name: "about", href: "#about" },
+        { name: "skills", href: "#skills" },
+        { name: "projects", href: "#projects" },
+        { name: "contact", href: "#contact" },
+    ];
+
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setisMenuOpen] = useState(false);
 
@@ -34,8 +34,9 @@ function Navbar() {
             isScrolled ? "py-3 bg-background/80 shadow-xs" : "py-5")}>
             <div className="container flex items-center justify-between">
                 <a className="text-xl font-bold text-primary flex items-center" href="#hero">
+                    <img src="/logo_64.svg" alt="Logo" className="w-8 h-8 mr-2" />
                     <span className="relative z-10">
-                        <span className="text-glow text-foreground"></span>Portfolio
+                        <span className="text-glow text-foreground">Paweł</span> Gędłek
                     </span>
                 </a>
 
