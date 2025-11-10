@@ -1,4 +1,4 @@
-import { Facebook, Github, Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
