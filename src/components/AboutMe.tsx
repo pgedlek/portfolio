@@ -32,7 +32,11 @@ function AboutMe() {
                                 {t("aboutMe.getInTouchButton")}
                             </a>
 
-                            <a href="" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300">
+                            <a className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+                                href={"/resume/resume.pdf"}
+                                download={"PGedlek_Resume.pdf"}
+                                rel="noopener noreferrer"
+                                target="_blank">
                                 {t("aboutMe.downloadResumeButton")}
                             </a>
                         </div>
