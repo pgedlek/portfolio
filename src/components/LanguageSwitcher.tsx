@@ -50,14 +50,14 @@ function LanguageSwitcher() {
                 {isDropdownOpen && (
                     <div
                         className={cn(
-                            "absolute right-0 bg-white dark:bg-gray-800 shadow-lg rounded-md",
-                            "py-2 w-32 z-50 border border-gray-200 dark:border-gray-700"
+                            "absolute right-0 bg-white shadow-lg rounded-md",
+                            "py-2 w-32 z-50 border bg-background/95"
                         )}
                     >
                         <button
                             onClick={() => changeLanguage("en")}
                             className={cn(
-                                "block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700",
+                                "block w-full text-left px-4 py-2 text-sm text-foreground/80 hover:text-primary",
                                 "focus:outline-none"
                             )}
                         >
@@ -66,7 +66,7 @@ function LanguageSwitcher() {
                         <button
                             onClick={() => changeLanguage("pl")}
                             className={cn(
-                                "block w-full text-left px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-gray-700",
+                                "block w-full text-left px-4 py-2 text-sm text-foreground/80 hover:text-primary",
                                 "focus:outline-none"
                             )}
                         >

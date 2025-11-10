@@ -109,13 +109,13 @@ function Contact() {
                         <div className="pt-8">
                             <h4 className="font-medium mb-4">{t("contact.socialMedia")}</h4>
                             <div className="flex space-x-4 justify-center">
-                                <a href="#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+                                <a href="https://www.linkedin.com/in/pgedlek/" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
                                     <Linkedin />
                                 </a>
-                                <a href="#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+                                <a href="https://github.com/pgedlek" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
                                     <Github />
                                 </a>
-                                <a href="#" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
+                                <a href="https://www.instagram.com/pgedoix/" target="_blank" className="text-muted-foreground hover:text-primary transition-colors">
                                     <Instagram />
                                 </a>
                             </div>
