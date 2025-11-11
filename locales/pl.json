@@ -10,22 +10,22 @@
         "welcome": "Cześć, jestem ",
         "firstName": "Paweł",
         "lastName": "Gędłek",
-        "heroDescription": "Tworzę wyjątkowe doświadczenia w sieci, wykorzystując nowoczesne technologie. Specjalizuję się w tworzeniu interfejsów front‑end, które są zarówno estetyczne, jak i funkcjonalne.",
+        "heroDescription": "Programista full‑stack wykorzystujący nowoczesne technologie do dostarczania kompleksowych rozwiązań end‑to‑end. Moje projekty backendowe i frontendowe znajdziesz na GitHubie.",
         "myWorkButton": "Zobacz moje projekty",
         "scroll": "Przewiń w dół"
     },
     "aboutMe": {
         "about": "O",
         "me": "Mnie",
-        "title": "Web Developer z pasją i twórca technologicznych rozwiązań",
-        "firstParagpraph": "Z ponad 5‑letnim doświadczeniem w tworzeniu stron internetowych specjalizuję się w budowaniu responsywnych, dostępnych i wydajnych aplikacji webowych z wykorzystaniem nowoczesnych technologii.",
-        "secondParagraph": "Z pasją tworzę eleganckie rozwiązania złożonych problemów i nieustannie uczę się nowych technologii oraz technik, aby pozostawać na czele stale zmieniającego się świata webu..",
-        "firstCardTitle": "Web Development",
-        "firstCard": "Tworzenie responsywnych stron i aplikacji internetowych z wykorzystaniem nowoczesnych frameworków.",
-        "secondCardTitle": "UI/UX Design",
-        "secondCard": "Projektowanie intuicyjnych interfejsów użytkownika i płynnych doświadczeń użytkownika.",
-        "thirdCardTitle": "Project Management",
-        "thirdCard": "Prowadzenie projektów od koncepcji po realizację z wykorzystaniem metodyk zwinnych.",
+        "title": "Fullstack Developer z pasją oraz twórca rozwiązań technologicznych",
+        "firstParagpraph": "Jestem programistą z ponad 5‑letnim doświadczeniem w tworzeniu oprogramowania, specjalizuję się w budowaniu responsywnych, dostępnych i wydajnych aplikacji z wykorzystaniem nowoczesnych technologii.",
+        "secondParagraph": "Z pasją tworzę rozwiązania złożonych problemów i nieustannie uczę się nowych technologii oraz technik, aby pozostawać na czele stale zmieniającego się świata webu.",
+        "firstCardTitle": "Programowanie backendowe",
+        "firstCard": "Implementacja aplikacji backendowych używając rozwiązań mikroserwisowych.",
+        "secondCardTitle": "Rozwiązania chmurowe",
+        "secondCard": "Wykorzystanie chmury do tworzenia skalowalnych i niezawodnych aplikacji.",
+        "thirdCardTitle": "Projektowanie interfejsów użytkownika",
+        "thirdCard": "Tworzenie responsywnych stron i aplikacji internetowych z wykorzystaniem nowoczesnych frameworków.",
         "getInTouchButton": "Skontaktuj się ze mną",
         "downloadResumeButton": "Pobierz moje CV"
     },
@@ -36,7 +36,7 @@
     "projects": {
         "featured": "Wyróżnione",
         "projects": "Projekty",
-        "description": "Przedstawiam wybrane ostatnie projekty, które tworzyłem z najwyższą dbałością o szczegóły, wydajność i komfort użytkownika.",
+        "description": "Przedstawiam wybrane projekty, które tworzyłem w ostatnim czasie.",
         "githubButton": "Sprawdź mojego GitHuba"
     },
     "contact": {

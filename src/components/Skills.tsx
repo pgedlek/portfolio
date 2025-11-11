@@ -3,26 +3,34 @@ import { cn } from '@/lib/utils';
 import { useTranslation } from "react-i18next";
 
 const skills = [
-    { name: "HTML/CSS", level: 95, category: "frontend" },
+    { name: "Java", level: 90, category: "backend" },
+    { name: "Spring Boot", level: 85, category: "backend" },
+    { name: "Hibernate", level: 70, category: "backend" },
+    { name: "Oracle DB", level: 75, category: "backend" },
+    { name: "Maven", level: 80, category: "backend" },
+
+    { name: "Google Cloud Platform", level: 85, category: "cloud" },
+    { name: "Google Kubernetes Engine", level: 75, category: "cloud" },
+    { name: "Terraform", level: 85, category: "cloud" },
+    { name: "Packer", level: 85, category: "cloud" },
+
+    { name: "Linux/Bash", level: 85, category: "devops" },
+    { name: "Ansible", level: 85, category: "devops" },
+    { name: "Docker", level: 75, category: "devops" },
+    { name: "Kubernetes", level: 70, category: "devops" },
+
     { name: "JavaScript", level: 90, category: "frontend" },
-    { name: "React", level: 90, category: "frontend" },
+    { name: "React JS", level: 90, category: "frontend" },
     { name: "TypeScript", level: 85, category: "frontend" },
     { name: "Tailwind CSS", level: 90, category: "frontend" },
-    { name: "Next.js", level: 80, category: "frontend" },
-
-    { name: "Node.js", level: 80, category: "backend" },
-    { name: "Express", level: 75, category: "backend" },
-    { name: "MongoDB", level: 70, category: "backend" },
-    { name: "PostgreSQL", level: 65, category: "backend" },
-    { name: "GraphQL", level: 60, category: "backend" },
+    { name: "Node JS", level: 50, category: "frontend" },
 
     { name: "Git/GitHub", level: 90, category: "tools" },
-    { name: "Docker", level: 70, category: "tools" },
-    { name: "Figma", level: 85, category: "tools" },
-    { name: "VS Code", level: 95, category: "tools" },
+    { name: "Jenkins", level: 80, category: "tools" },
+    { name: "TeamCity", level: 90, category: "tools" }
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "backend", "cloud", "devops", "frontend", "tools"];
 
 function Skills() {
     const [activeCategory, setActiveCategory] = useState("all");

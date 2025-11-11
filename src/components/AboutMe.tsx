@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Briefcase, Code, User } from "lucide-react";
+import { CloudCheck, CodeXml, Server } from "lucide-react";
 
 function AboutMe() {
     const { t } = useTranslation();
@@ -46,7 +46,7 @@ function AboutMe() {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-center gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Code className="h-6 w-6 text-primary" />
+                                    <Server className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">{t("aboutMe.firstCardTitle")}</h4>
@@ -59,7 +59,7 @@ function AboutMe() {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-center gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6 text-primary" />
+                                    <CloudCheck className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">{t("aboutMe.secondCardTitle")}</h4>
@@ -72,7 +72,7 @@ function AboutMe() {
                         <div className="gradient-border p-6 card-hover">
                             <div className="flex items-center gap-4">
                                 <div className="p-3 rounded-full bg-primary/10">
-                                    <Briefcase className="h-6 w-6 text-primary" />
+                                    <CodeXml className="h-6 w-6 text-primary" />
                                 </div>
                                 <div className="text-left">
                                     <h4 className="font-semibold text-lg">{t("aboutMe.thirdCardTitle")}</h4>
